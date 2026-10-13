@@ -1,33 +1,22 @@
-### Employee Mediclaim
+# Employee Mediclaim
 
-Mediclaim Details for Employee
+A Frappe app that adds Mediclaim details to the Employee record in ERPNext/HRMS.
 
-### Installation
+## What it includes
+- A **Mediclaim** tab on the Employee DocType (custom fields, exported as fixtures)
+- **Mediclaim** and **Mediclaim Member** DocTypes (Mediclaim Member is a child table)
+- **Employee Mediclaim Report** and **Employee Mediclaim Report 2**, script reports with multiple filters
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+## Requirements
+- Frappe / ERPNext v16
+- HRMS
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch main
-bench install-app employee_mediclaim
-```
+## Installation
+    bench get-app <repo-url>
+    bench --site <site-name> install-app employee_mediclaim
+    bench --site <site-name> migrate
 
-### Contributing
+For Docker setups, add this repo to `apps.json` and build a custom image.
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/employee_mediclaim
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
-
-mit
+## License
+MIT

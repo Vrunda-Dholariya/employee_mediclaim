@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-09-23 11:25:55.352828",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "employee_code",
+  "date_of_joining",
+  "policy_no",
+  "corporate_name",
+  "policy_effective_date",
+  "members"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Code"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Joining",
+   "reqd": 1
+  },
+  {
+   "fieldname": "policy_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Policy No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "corporate_name",
+   "fieldtype": "Data",
+   "label": "Corporate Name"
+  },
+  {
+   "fieldname": "policy_effective_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Policy Effective Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Mediclaim Member"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-23 12:58:21.323013",
+ "modified_by": "Administrator",
+ "module": "Employee Mediclaim",
+ "name": "Mediclaim",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
